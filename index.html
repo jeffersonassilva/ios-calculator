@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iOS Calculator</title>
+    <link href="./public/css/app.css" rel="stylesheet">
+</head>
+<body>
+<div class="h-screen bg-gray-100 flex justify-center items-center">
+    <div class="bg-zinc-900 p-4 rounded-lg">
+        <div class="flex justify-between items-center w-full">
+            <input class="bg-transparent select-none placeholder-white mb-2 ring-0
+                          border-none outline-none
+                        text-white text-[2.8rem] text-right font-thin w-[220px]"
+                   id="display"
+                   name="display"
+                   placeholder="0"
+                   readonly
+                   type="text"/>
+        </div>
+        <div class="grid grid-cols-4 gap-2 select-none">
+            <div class="gray clear">AC</div>
+            <div class="gray invert-number">+/-</div>
+            <div class="gray percentage">%</div>
+            <div class="yellow arithmetic-buttons" data-value="/">÷</div>
+            <div class="numbers">7</div>
+            <div class="numbers">8</div>
+            <div class="numbers">9</div>
+            <div class="yellow arithmetic-buttons" data-value="*">x</div>
+            <div class="numbers">4</div>
+            <div class="numbers">5</div>
+            <div class="numbers">6</div>
+            <div class="yellow arithmetic-buttons" data-value="-">−</div>
+            <div class="numbers">1</div>
+            <div class="numbers">2</div>
+            <div class="numbers">3</div>
+            <div class="yellow arithmetic-buttons" data-value="+">+</div>
+            <div class="numbers zero">0</div>
+            <div class="comma">,</div>
+            <div class="yellow calculate">=</div>
+        </div>
+    </div>
+</div>
+<script src="./public/js/app.js"></script>
+</body>
+</html>
