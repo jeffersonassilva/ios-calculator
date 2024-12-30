@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.numbers, .gray, .yellow, .zero, .comma {
+    @apply flex justify-center items-center rounded-full w-12 h-12 text-lg cursor-pointer
+}
+
+.numbers, .comma {
+    @apply bg-[#333333] text-white
+}
+
+.gray {
+    @apply bg-[#a6a6a6] text-black
+}
+
+.yellow {
+    @apply bg-[#ff9e0b] text-white
+}
+
+.zero {
+    @apply bg-[#333333] text-white col-span-2 w-full justify-start px-5
+}
